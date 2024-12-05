@@ -1,0 +1,42 @@
+.breadCrumbs {
+    display: flex;
+    height: 41px;
+    padding-left: 84px;
+    align-items: center;
+    background: #262626;
+    gap: 10px;
+}
+
+.text {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+}
+
+.separator {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+    .breadCrumbs {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 770px) {
+    .breadCrumbs {
+        height: 35px;
+        padding-left: 30px;
+    }
+
+    .separator {
+        font-size: 10px;
+    }
+}

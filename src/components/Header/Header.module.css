@@ -1,0 +1,174 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 84px;
+    height: 58px;
+    background: #262626;
+    align-items: center;
+
+}
+
+.links {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userControls {
+    display: flex;
+    gap: 56px;
+}
+
+.seconderyNav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.controls {
+    color: #F3F3F3;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+.userActions {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.userIcon {
+    cursor: pointer;
+}
+
+.userIconAccount {
+    display: none;
+}
+
+.toAccount {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #428D26;
+    width: 138px;
+    height: 28px;
+    cursor: pointer;
+    border: 0;
+}
+
+.toAccount:hover {
+    background: #305e1f;
+}
+
+.bottom {
+    display: flex;
+    padding: 0 84px;
+    align-items: center;
+    height: 103px;
+    background: #101010;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 192px;
+    height: 32.335px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navItem {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.burger {
+    width: 33px;
+    height: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+
+    .top,
+    .bottom {
+        padding: 0 50px;
+    }
+
+    .nav {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navItem {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .seconderyNav,
+    .nav {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .top {
+        padding: 0 30px;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    .bottom {
+        padding: 0 30px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+    .top {
+        height: 45px;
+    }
+
+    .bottom {
+        height: 90px;
+    }
+
+    .userActions {
+        gap: 20px;
+    }
+
+    .toAccount {
+        display: none;
+    }
+
+    .userIconAccount {
+        width: 24px;
+        height: 24px;
+        display: block;
+        overflow: visible;
+        cursor: pointer;
+    }
+}

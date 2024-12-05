@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 10px;
+    width: 100%;
+    /* Гибкая ширина */
+    max-width: 408px;
+    /* Максимальная ширина */
+    transition: box-shadow 0.3s, border-radius 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    /* Подстраивается под ширину карточки */
+    height: auto;
+    /* Сохраняет пропорции изображения */
+}
+
+.category,
+.title,
+.text {
+    line-height: 160%;
+}
+
+.category {
+    color: #6C6C6C;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.title {
+    color: #262626;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.text {
+    color: #262626;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1420px) {
+    .card {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 830px) {
+    .card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        max-width: 260px;
+    }
+}
